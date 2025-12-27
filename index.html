@@ -531,13 +531,18 @@
     .modalActions{ display:flex; justify-content:flex-end; gap:10px; }
 
     /* Responsiveness */
-    @media (max-width: 780px){
+    @media (max-width: 600px) {
+  .right .section:last-child {
+    display: none;
+      }
+    }
+    /* @media (max-width: 600px){
       .panel{ grid-template-columns: 1fr; }
       canvas{ height: 200px; }
       .btnBig{ width: 88px; height: 88px; }
       .status{ min-width: unset; flex: 1; }
       .gauge{ width: 140px; }
-    }
+    } */
 
     @media (max-height: 720px){
       canvas{ height: 170px; }
