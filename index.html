@@ -43,6 +43,10 @@
     }
 
     *{box-sizing:border-box; -webkit-tap-highlight-color: transparent;}
+    html, body {
+          -webkit-overflow-scrolling: touch;
+               }
+
     html,body{height:100%;}
     body{
       margin:0;
@@ -94,7 +98,7 @@
 
     .device{
       width:min(980px, 96vw);
-      max-height: 94vh;
+      max-height: none;
       display:grid;
       grid-template-rows: auto 1fr auto;
       gap: 14px;
